@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Movable
+  - Lever
   layers:
   - Default
   - TransparentFX

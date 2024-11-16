@@ -5,16 +5,17 @@ using UnityEngine;
 public class ButtonTrigger : MonoBehaviour
 {
     public GameObject disapearThis;
+    public bool isSeen = true;
 
     private void Start()
     {
-        disapearThis.SetActive(true);
+        disapearThis.SetActive(isSeen);
     }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Player" && collision.gameObject.transform.position.y > transform.position.y)
         {
-            disapearThis.SetActive(false);
+            disapearThis.SetActive(!isSeen);
         }
     }
 
@@ -22,7 +23,7 @@ public class ButtonTrigger : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            disapearThis.SetActive(true);
+            disapearThis.SetActive(isSeen);
         }
     }
 }
