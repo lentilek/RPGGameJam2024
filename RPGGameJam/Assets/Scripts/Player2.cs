@@ -11,14 +11,16 @@ public class Player2 : MonoBehaviour
     public bool isOnGround;
     public int pushDirection;
     private GameObject pushable;
+    [HideInInspector] public bool inPortal;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         pushDirection = 0;
+        inPortal = false;
     }
     private void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) && !inPortal)
         {
             if (isOnGround)
             {
@@ -33,7 +35,7 @@ public class Player2 : MonoBehaviour
                 this.transform.position += Vector3.right * moveForceAir * Time.deltaTime;
             }
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) && !inPortal)
         {
             if (isOnGround)
             {
@@ -48,7 +50,7 @@ public class Player2 : MonoBehaviour
                 this.transform.position -= Vector3.right * moveForceAir * Time.deltaTime;
             }
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isOnGround)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isOnGround && !inPortal)
         {
             isOnGround = false;
             rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
