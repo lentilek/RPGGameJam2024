@@ -65,11 +65,11 @@ public class Player1 : MonoBehaviour
         {
             isOnGround = true;
             pushable = collision.gameObject;
-            if (this.transform.position.x < pushable.transform.position.x && this.transform.position.y <= pushable.transform.position.y)
+            if (this.transform.position.x < pushable.transform.position.x && (this.transform.position.y - pushable.transform.position.y) < 1f)//this.transform.position.y <= pushable.transform.position.y)
             {
                 pushDirection = 1; // right
             }
-            else if (this.transform.position.y <= pushable.transform.position.y)
+            else if ((this.transform.position.y - pushable.transform.position.y) < 1f)//(this.transform.position.y <= pushable.transform.position.y)
             {
                 pushDirection = 2; // left
             }
