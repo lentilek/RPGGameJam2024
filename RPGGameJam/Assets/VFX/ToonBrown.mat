@@ -42,14 +42,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Max: 1.08
-    - _Min: 0.35
+    - _Max: 1.54
+    - _Min: 0.55
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Shader: 0.34
+    - _Shader: 0.3
     m_Colors:
-    - _BottomColor: {r: 0.3857028, g: 0.4188679, b: 0.19836947, a: 0}
-    - _TopColor: {r: 0.6226415, g: 0.49937052, b: 0.3418654, a: 0}
+    - _BottomColor: {r: 0.4339623, g: 0.32058436, b: 0.14983979, a: 0}
+    - _TopColor: {r: 0.20943388, g: 0.6981132, b: 0.562872, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7310906303862764508
 MonoBehaviour:

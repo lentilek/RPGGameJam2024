@@ -52,5 +52,5 @@ Material:
     - _OVERLAY: 1
     - _Overlay: 0
     m_Colors:
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 0}
+    - _OutlineColor: {r: 0.19245279, g: 0.03885367, b: 0.03885367, a: 0}
   m_BuildTextureStacks: []
