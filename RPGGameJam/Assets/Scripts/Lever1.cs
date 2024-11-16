@@ -18,13 +18,13 @@ public class Lever1 : MonoBehaviour
     }
     private void Update()
     {
-        if(player != null && Input.GetKeyDown(KeyCode.LeftShift))
+        if(player != null && Input.GetKeyDown(KeyCode.LeftShift) && player.GetComponent<Player1>() != null)
         {
             object1.GetComponent<Animation>().enabled = true;
             lever1.SetActive(false);
             lever2.SetActive(true);
         }
-        else if(player != null && Input.GetKeyDown(KeyCode.RightShift))
+        else if(player != null && Input.GetKeyDown(KeyCode.RightShift) && player.GetComponent<Player2>() != null)
         {
             object2.GetComponent<Animator>().enabled = true;
             object3.SetActive(false);
