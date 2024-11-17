@@ -13,17 +13,11 @@ public class DeathZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            AudioManager.Instance.PlaySound("gameOver");
-            StartCoroutine(DeathWait());
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             //StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
         }
     }
 
-    IEnumerator DeathWait()
-    {
-        yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
     /*Enumerator LoadLevel(int levelIndex)
     {
         transition.SetTrigger("Start");
