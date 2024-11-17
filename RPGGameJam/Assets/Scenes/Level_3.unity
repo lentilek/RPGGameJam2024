@@ -6012,6 +6012,11 @@ PrefabInstance:
       propertyPath: pauseUI
       value: 
       objectReference: {fileID: 1388513246}
+    - target: {fileID: 3346466181190727684, guid: 968aa84ee7838a541abbbca4038315af,
+        type: 3}
+      propertyPath: EndScreen
+      value: 
+      objectReference: {fileID: 1388513247}
     - target: {fileID: 7193810754104841381, guid: 968aa84ee7838a541abbbca4038315af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7328,6 +7333,12 @@ PrefabInstance:
 --- !u!1 &1388513246 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5356545569172878000, guid: 742ea65bd32253e43a9734f21dd2e24b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1388513245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1388513247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4141809565969988638, guid: 742ea65bd32253e43a9734f21dd2e24b,
     type: 3}
   m_PrefabInstance: {fileID: 1388513245}
   m_PrefabAsset: {fileID: 0}

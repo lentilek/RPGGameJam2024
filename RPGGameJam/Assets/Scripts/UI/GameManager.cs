@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     [SerializeField] private GameObject pauseUI;
+    [SerializeField] private GameObject EndScreen;
     [HideInInspector] public bool isPaused;
     [HideInInspector] public int inPortal;
     private void Awake()
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         pauseUI.SetActive(false);
+        EndScreen.SetActive(false);
         isPaused = false;
         Time.timeScale = 1f;
         inPortal = 0;
@@ -49,6 +51,10 @@ public class GameManager : MonoBehaviour
         if(inPortal == 2 && SceneManager.GetActiveScene().buildIndex != 3)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }else if(inPortal == 2)
+        {
+            Time.timeScale = 0f;
+            EndScreen.SetActive(true);
         }
     }
 }
