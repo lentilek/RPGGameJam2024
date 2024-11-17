@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Lever1 : MonoBehaviour
 {
-    public GameObject object1, object2, object3;
+    public int leverNumber;
+
+    public GameObject object1, object2, object3, disk;
 
     private GameObject player;
 
@@ -18,14 +20,23 @@ public class Lever1 : MonoBehaviour
     }
     private void Update()
     {
-        if(player != null && Input.GetKeyDown(KeyCode.LeftShift) && player.GetComponent<Player1>() != null)
+        if (player != null && Input.GetKeyDown(KeyCode.LeftShift) && player.GetComponent<Player1>() != null)
         {
-            object1.GetComponent<Animation>().enabled = true;
+            AudioManager.Instance.PlaySound("lever");
+            object1.GetComponent<Animator>().enabled = true;
             lever1.SetActive(false);
             lever2.SetActive(true);
         }
-        else if(player != null && Input.GetKeyDown(KeyCode.RightShift) && player.GetComponent<Player2>() != null)
+        else if (player != null && Input.GetKeyDown(KeyCode.RightShift) && player.GetComponent<Player2>() != null && leverNumber == 1)
         {
+            AudioManager.Instance.PlaySound("lever");
+            disk.GetComponent<Animator>().enabled = true;
+            lever1.SetActive(false);
+            lever2.SetActive(true);
+        }
+        else if (player != null && Input.GetKeyDown(KeyCode.RightShift) && player.GetComponent<Player2>() != null && leverNumber == 2)
+        {
+            AudioManager.Instance.PlaySound("lever");
             object2.GetComponent<Animator>().enabled = true;
             object3.SetActive(false);
             lever1.SetActive(false);

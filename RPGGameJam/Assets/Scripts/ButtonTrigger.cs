@@ -40,6 +40,7 @@ public class ButtonTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && other.gameObject.transform.position.y > transform.position.y)
         {
+            AudioManager.Instance.PlaySound("button");
             //Debug.Log("uwu");
             disapearThis.SetActive(!isSeen);
             buttonRed.SetActive(false);

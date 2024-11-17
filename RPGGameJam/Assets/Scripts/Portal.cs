@@ -6,39 +6,39 @@ using UnityEngine;
 public class Portal : MonoBehaviour
 {
     private GameObject player;
-    private bool isInside;
+    //private bool isInside;
     private void Start()
     {
-        isInside = false;
+        //isInside = false;
     }
     private void Update()
     {
-        if (player != null && Input.GetKeyDown(KeyCode.LeftShift) && player.GetComponent<Player1>() != null && !isInside)
+        if (player != null && Input.GetKeyDown(KeyCode.LeftShift) && player.GetComponent<Player1>() != null && !player.GetComponent<Player1>().inPortal)
         {
-            Debug.Log("uwu");
+            AudioManager.Instance.PlaySound("portal");
+            //Debug.Log("uwu");
             GameManager.Instance.inPortal++;
-            isInside = true;
+            //isInside = true;
             player.GetComponent<Player1>().inPortal = true;
         }
-        else if (player != null && Input.GetKeyDown(KeyCode.RightShift) && player.GetComponent<Player2>() != null && !isInside)
+        else if (player != null && Input.GetKeyDown(KeyCode.RightShift) && player.GetComponent<Player2>() != null && !player.GetComponent<Player2>().inPortal)
         {
-            Debug.Log("owo");
+            AudioManager.Instance.PlaySound("portal");
+            //Debug.Log("owo");
             GameManager.Instance.inPortal++;
-            isInside = true;
+            //isInside = true;
             player.GetComponent<Player2>().inPortal = true;
         }
-        else if(isInside && Input.GetKeyDown(KeyCode.LeftShift) && player.GetComponent<Player1>() != null)// || Input.GetKeyDown(KeyCode.RightShift)))
+        else if(player != null && player.GetComponent<Player1>() != null && player.GetComponent<Player1>().inPortal && Input.GetKeyDown(KeyCode.LeftShift))// || Input.GetKeyDown(KeyCode.RightShift)))
         {
-            Debug.Log("uwu");
-
-            isInside = false;
+            //Debug.Log("uwu");
+            //isInside = false;
             GameManager.Instance.inPortal--;
             player.GetComponent<Player1>().inPortal = false;
-        }else if(isInside && Input.GetKeyDown(KeyCode.RightShift) && player.GetComponent<Player2>() != null)
+        }else if (player != null && player.GetComponent<Player2>() != null && player.GetComponent<Player2>().inPortal && Input.GetKeyDown(KeyCode.RightShift))
         {
-            Debug.Log("owo");
-
-            isInside = false;
+            //Debug.Log("owo");
+            //isInside = false;
             GameManager.Instance.inPortal--;
             player.GetComponent<Player2>().inPortal = false;
         }
