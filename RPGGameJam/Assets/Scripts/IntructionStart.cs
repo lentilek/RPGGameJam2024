@@ -12,15 +12,18 @@ public class IntructionStart : MonoBehaviour
         {
             toClose.SetActive(true);
             Time.timeScale = 0f;
+            Cursor.visible = true;
         }
         else
         {
             Time.timeScale = 1f;
             toClose.SetActive(false);
+            Cursor.visible = false;
         }
     }
     public void CloseInstruction()
     {
+        Cursor.visible = false;
         Time.timeScale = 1f;
         toClose.SetActive(false);
     }

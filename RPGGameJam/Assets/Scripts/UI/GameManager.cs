@@ -28,6 +28,10 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        if(SceneManager.GetActiveScene().buildIndex != 1)
+        {
+            Cursor.visible = false;
+        }
         pauseUI.SetActive(false);
         EndScreen.SetActive(false);
         isPaused = false;
@@ -39,11 +43,13 @@ public class GameManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape) && !isPaused)
         {
+            Cursor.visible = true;
             pauseUI.SetActive(true);
             Time.timeScale = 0f;
             isPaused = true;
         }else if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Cursor.visible = false;
             Pause.Instance.instruction.SetActive(false);
             pauseUI.SetActive(false);
             isPaused = false;

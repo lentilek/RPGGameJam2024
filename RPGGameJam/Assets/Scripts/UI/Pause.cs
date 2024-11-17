@@ -26,6 +26,7 @@ public class Pause : MonoBehaviour
     }
     public void Resume()
     {
+        Cursor.visible = false;
         instruction.SetActive(false);
         GameManager.Instance.isPaused = false;
         Time.timeScale = 1f;

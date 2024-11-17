@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     {
         howToGhost.SetActive(false);
         credits.SetActive(false);
+        Cursor.visible = true;
     }
     public void StartGame()
     {
