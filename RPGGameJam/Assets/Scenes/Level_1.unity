@@ -893,7 +893,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5479e6477e64fe348b81c40bdd8f08e4, type: 2}
+      objectReference: {fileID: 2100000, guid: 0e2316da8172b8a4bb32c3199c3da8b8, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3157,6 +3157,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PortalGateMayan_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5838919283827322291, guid: fc9c6a1016a8fd24fbf5fca54dc1aa8f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 72e38da59612d0541b4f2dbc0b6c7872, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
