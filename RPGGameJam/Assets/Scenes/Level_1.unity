@@ -1225,7 +1225,7 @@ PrefabInstance:
     - target: {fileID: 1392077260213324348, guid: d7b8985cd28e29b40986a6977f282fdb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.75
+      value: 28.788
       objectReference: {fileID: 0}
     - target: {fileID: 1392077260213324348, guid: d7b8985cd28e29b40986a6977f282fdb,
         type: 3}
@@ -1276,6 +1276,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vent3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088467070970944457, guid: d7b8985cd28e29b40986a6977f282fdb,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665705957038032281, guid: d7b8985cd28e29b40986a6977f282fdb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 7875615444233757513, guid: 0cc2275904fda0a45867259dcfaae440,
+        type: 3}
+    - target: {fileID: 8097201153301136574, guid: d7b8985cd28e29b40986a6977f282fdb,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
