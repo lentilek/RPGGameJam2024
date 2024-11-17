@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 0f;
             EndScreen.SetActive(true);
+            Cursor.visible = true;
         }
     }
 }

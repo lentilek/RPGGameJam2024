@@ -5,10 +5,12 @@ using UnityEngine;
 public class AudioHear : MonoBehaviour
 {
     private AudioSource audioSrc;
+    public float volume = 1f;
 
     private void Start()
     {
         audioSrc = GetComponent<AudioSource>();
+        audioSrc.volume = volume;
     }
 
     private void OnTriggerEnter(Collider other)
