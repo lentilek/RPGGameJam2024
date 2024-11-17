@@ -13,6 +13,8 @@ public class Player1 : MonoBehaviour
     public int pushDirection;
     private GameObject pushable;
     [HideInInspector] public bool inPortal;
+    [SerializeField] private Animator anim;
+    public GameObject graphic;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -25,6 +27,7 @@ public class Player1 : MonoBehaviour
         {
             if (isOnGround)
             {
+                anim.SetBool("isWalkingRight", true);
                 this.transform.position += Vector3.right * moveForceGround * Time.deltaTime;
                 if(pushDirection == 1)
                 {
@@ -33,13 +36,15 @@ public class Player1 : MonoBehaviour
             }
             else
             {
+                anim.SetBool("isWalkingRight", false);
                 this.transform.position += Vector3.right * moveForceAir * Time.deltaTime;
             }
         }
-        if (Input.GetKey(KeyCode.A) && !inPortal)
+        else if (Input.GetKey(KeyCode.A) && !inPortal)
         {
             if(isOnGround)
             {
+                anim.SetBool("isWalkingLeft", true);
                 this.transform.position -= Vector3.right * moveForceGround * Time.deltaTime;
                 if (pushDirection == 2)
                 {
@@ -48,13 +53,20 @@ public class Player1 : MonoBehaviour
             }
             else
             {
+                anim.SetBool("isWalkingLeft", false);
                 this.transform.position -= Vector3.right * moveForceAir * Time.deltaTime;
             }
+        }
+        else if (!inPortal)
+        {
+            anim.SetBool("isWalkingRight", false);
+            anim.SetBool("isWalkingLeft", false);
         }
         if (Input.GetKeyDown(KeyCode.W) && isOnGround && !inPortal)
         {
             AudioManager.Instance.PlaySound("jump");
-            isOnGround = false; 
+            isOnGround = false;
+            anim.SetBool("isInAir", true);
             rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
         }
     }
@@ -63,9 +75,11 @@ public class Player1 : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             isOnGround = true;
+            anim.SetBool("isInAir", false);
         }
         if (collision.gameObject.tag == "Movable")
         {
+            anim.SetBool("isInAir", false);
             isOnGround = true;
             pushable = collision.gameObject;
             if (this.transform.position.x < pushable.transform.position.x && (this.transform.position.y - pushable.transform.position.y) < 1f)//this.transform.position.y <= pushable.transform.position.y)
