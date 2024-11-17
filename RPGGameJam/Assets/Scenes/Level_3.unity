@@ -7430,6 +7430,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1628240350411117187, guid: 2a6de220492565645ab9c840a0d17779,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628240350411117187, guid: 2a6de220492565645ab9c840a0d17779,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628240350411117187, guid: 2a6de220492565645ab9c840a0d17779,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1091374543
+      objectReference: {fileID: 0}
     - target: {fileID: 6579065493197859876, guid: 2a6de220492565645ab9c840a0d17779,
         type: 3}
       propertyPath: m_Name
@@ -9154,6 +9169,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fff7f7db9d580c94292cec0e63dc6197, type: 2}
+    - target: {fileID: 8104264069924793962, guid: ebd2cad9d1a4cc149b7afb5c20e6adc2,
+        type: 3}
+      propertyPath: far clip plane
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 8949850770122244270, guid: ebd2cad9d1a4cc149b7afb5c20e6adc2,
         type: 3}
       propertyPath: m_Name
