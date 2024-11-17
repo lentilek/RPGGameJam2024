@@ -51,6 +51,12 @@ MonoBehaviour:
   gameOver: {fileID: 8300000, guid: 124f4e9273ce0fe49928da3682a9fee7, type: 3}
   portal: {fileID: 8300000, guid: 4675ac5d39ee62a40b2e1411d8d3b0dc, type: 3}
   jump: {fileID: 8300000, guid: e6d6569099bbece4d8acda97fdb77a71, type: 3}
+  buttonVolume: 1
+  cuckooVolume: 1
+  leverVolume: 1
+  gameOverVolume: 1
+  portalVolume: 1.5
+  jumpVolume: 0.35
   audioSrc: {fileID: 0}
 --- !u!82 &4969407288646414114
 AudioSource:
