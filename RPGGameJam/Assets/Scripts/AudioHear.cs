@@ -6,7 +6,7 @@ public class AudioHear : MonoBehaviour
 {
     private AudioSource audioSrc;
     public float volume = 1f;
-
+    public bool once = false;
     private void Start()
     {
         audioSrc = GetComponent<AudioSource>();
@@ -18,6 +18,10 @@ public class AudioHear : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             audioSrc.Play();
+            if(once)
+            {
+                audioSrc.enabled = false;
+            }
         }
     }
 
