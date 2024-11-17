@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7834848149208624943
+--- !u!114 &-8601476281679338522
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StylizedWater
+  m_Name: Shader Graphs_StylizedWater
   m_Shader: {fileID: -6465566751694194690, guid: e277cee2e6f62404daa9542547a6f212,
     type: 3}
   m_Parent: {fileID: 0}
@@ -37,6 +37,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _RefractionNormal:
+        m_Texture: {fileID: 2800000, guid: 3623177da55c5bf44a05d2425f6e75b7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -51,13 +55,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _HightFrequency: 2.22
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RefractionScale: 0.03
-    - _RefractionSpeed: 0.015
-    - _RefractionStrength: 8
-    - _WaterDepth: 1.98
+    - _RefractionSpeed: 0.23
+    - _RefractionStrength: 0.08
+    - _WaterDepth: 0.44
+    - _WaveAmplitude: 0.08
+    - _WaveSpeed: 1.43
     m_Colors:
-    - _DeepWater: {r: 0.18458506, g: 0.3648122, b: 0.6415094, a: 0.8784314}
-    - _ShallowWater: {r: 0.18422928, g: 0.77955574, b: 0.8679245, a: 0.9098039}
+    - _DeepWater: {r: 0.18431368, g: 0.43042308, b: 0.6431373, a: 0.84313726}
+    - _RefractionScale: {r: 0.7, g: 0.63, b: 0, a: 0}
+    - _ShallowWater: {r: 0.2534264, g: 0.7309974, b: 0.8018868, a: 0.8666667}
   m_BuildTextureStacks: []
