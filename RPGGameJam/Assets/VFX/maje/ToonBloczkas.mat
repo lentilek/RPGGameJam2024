@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ToonBrown
+  m_Name: ToonBloczkas
   m_Shader: {fileID: -6465566751694194690, guid: 8869e2b9059393948a7e80d582d95b77,
     type: 3}
   m_Parent: {fileID: 0}
@@ -42,14 +42,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Max: 1.54
-    - _Min: 0.55
+    - _Max: 4.77
+    - _Min: 0.83
+    - _Mor_Kolor: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Shader: 0.3
+    - _Shader: 0.78
     m_Colors:
-    - _BottomColor: {r: 0.4339623, g: 0.32058436, b: 0.14983979, a: 0}
-    - _TopColor: {r: 0.20943388, g: 0.6981132, b: 0.562872, a: 0}
+    - _BottomColor: {r: 0.116530396, g: 0.29803923, b: 0.09803922, a: 0}
+    - _TopColor: {r: 0.2784314, g: 0.5686275, b: 0.35830536, a: 0}
+    - _mor: {r: 0.09452047, g: 0.10943389, b: 0.06256314, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7310906303862764508
 MonoBehaviour:

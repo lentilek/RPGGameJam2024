@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8474170608069896538
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 7
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -20,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Toon1
+  m_Name: gree
   m_Shader: {fileID: -6465566751694194690, guid: 8869e2b9059393948a7e80d582d95b77,
     type: 3}
   m_Parent: {fileID: 0}
@@ -57,10 +44,25 @@ Material:
     m_Floats:
     - _Max: 1
     - _Min: 0.3
+    - _Mor_Kolor: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Shader: 0.49
+    - _Shader: 0.73
     m_Colors:
-    - _BottomColor: {r: 1, g: 1, b: 1, a: 0}
-    - _TopColor: {r: 0, g: 0, b: 0, a: 0}
+    - _BottomColor: {r: 0.050980397, g: 0.25490198, b: 0.1764706, a: 0}
+    - _TopColor: {r: 0.078431375, g: 0.30588236, b: 0.29411766, a: 0}
+    - _mor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &3624077847392659070
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
