@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
             isPaused = true;
         }else if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Pause.Instance.instruction.SetActive(false);
             pauseUI.SetActive(false);
             isPaused = false;
             Time.timeScale = 1f;
