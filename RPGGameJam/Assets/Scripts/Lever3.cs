@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Lever3 : MonoBehaviour
 {
-    public int leverNumber;
-    public GameObject bridge1, bridge2, bridge3;
+    public GameObject bridge;
 
     private GameObject player;
 
@@ -13,21 +12,14 @@ public class Lever3 : MonoBehaviour
 
     private void Start()
     {
-        //lightning.SetActive(true);
         lever1.SetActive(true);
         lever2.SetActive(false);
     }
     private void Update()
     {
-        if (player != null && Input.GetKeyDown(KeyCode.RightShift) && leverNumber == 1)
+        if (player != null && Input.GetKeyDown(KeyCode.RightShift))
         {
-            //column.GetComponent<Animator>().enabled = true;
-            lever1.SetActive(false);
-            lever2.SetActive(true);
-        }
-        else if (player != null && Input.GetKeyDown(KeyCode.RightShift) && leverNumber == 2)
-        {
-            //lightning.SetActive(false);
+            bridge.GetComponent<Animator>().enabled = true;
             lever1.SetActive(false);
             lever2.SetActive(true);
         }

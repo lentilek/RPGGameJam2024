@@ -15,29 +15,27 @@ public class Portal : MonoBehaviour
     {
         if (player != null && Input.GetKeyDown(KeyCode.LeftShift) && player.GetComponent<Player1>() != null && !isInside)
         {
-            Debug.Log("uwu");
+            //Debug.Log("uwu");
             GameManager.Instance.inPortal++;
             isInside = true;
             player.GetComponent<Player1>().inPortal = true;
         }
         else if (player != null && Input.GetKeyDown(KeyCode.RightShift) && player.GetComponent<Player2>() != null && !isInside)
         {
-            Debug.Log("owo");
+            //Debug.Log("owo");
             GameManager.Instance.inPortal++;
             isInside = true;
             player.GetComponent<Player2>().inPortal = true;
         }
         else if(isInside && Input.GetKeyDown(KeyCode.LeftShift) && player.GetComponent<Player1>() != null)// || Input.GetKeyDown(KeyCode.RightShift)))
         {
-            Debug.Log("uwu");
-
+            //Debug.Log("uwu");
             isInside = false;
             GameManager.Instance.inPortal--;
             player.GetComponent<Player1>().inPortal = false;
         }else if(isInside && Input.GetKeyDown(KeyCode.RightShift) && player.GetComponent<Player2>() != null)
         {
-            Debug.Log("owo");
-
+            //Debug.Log("owo");
             isInside = false;
             GameManager.Instance.inPortal--;
             player.GetComponent<Player2>().inPortal = false;
