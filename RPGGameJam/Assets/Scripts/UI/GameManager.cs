@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
             Destroy(Instance.gameObject);
             Instance = this;
         }
+        MusicManager.Instance.newScene = true;
     }
     private void Start()
     {
