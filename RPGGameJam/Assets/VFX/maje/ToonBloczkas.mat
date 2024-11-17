@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5570872799824796580
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 7
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -20,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ToonGray2
+  m_Name: ToonBloczkas
   m_Shader: {fileID: -6465566751694194690, guid: 8869e2b9059393948a7e80d582d95b77,
     type: 3}
   m_Parent: {fileID: 0}
@@ -55,12 +42,27 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Max: 1
-    - _Min: 0.3
+    - _Max: 4.77
+    - _Min: 0.83
+    - _Mor_Kolor: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Shader: 0.49
+    - _Shader: 0.78
     m_Colors:
-    - _BottomColor: {r: 0.6679245, g: 0.64398, b: 0.64398, a: 0}
-    - _TopColor: {r: 0.4037736, g: 0.37406194, b: 0.37406194, a: 0}
+    - _BottomColor: {r: 0.116530396, g: 0.29803923, b: 0.09803922, a: 0}
+    - _TopColor: {r: 0.2784314, g: 0.5686275, b: 0.35830536, a: 0}
+    - _mor: {r: 0.09452047, g: 0.10943389, b: 0.06256314, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &7310906303862764508
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7

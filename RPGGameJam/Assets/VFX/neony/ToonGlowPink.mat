@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-686440283412594753
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 7
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -20,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ToonGrey
+  m_Name: ToonGlowPink
   m_Shader: {fileID: -6465566751694194690, guid: 8869e2b9059393948a7e80d582d95b77,
     type: 3}
   m_Parent: {fileID: 0}
@@ -55,13 +42,26 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Max: 1.24
-    - _Min: 0.29
+    - _Max: 1
+    - _Min: 0.3
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Shader: 0.54
+    - _Shader: -15.89
     m_Colors:
-    - _BottomColor: {r: 0.4707103, g: 0.4423851, b: 0.5245282, a: 0}
-    - _Color: {r: 0.51663625, g: 0.24850833, b: 0.78867924, a: 1}
-    - _TopColor: {r: 0.4264151, g: 0.21159841, b: 0.3678288, a: 0}
+    - _BottomColor: {r: 0.72156864, g: 0.42352942, b: 0.5024825, a: 0}
+    - _TopColor: {r: 0.6528301, g: 0.27960837, b: 0.3883077, a: 0}
+    - _mor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &2386686640837921270
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
