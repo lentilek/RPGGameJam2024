@@ -90,11 +90,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7a32ab456468ff4aa6c942dd38ff9c6,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 654724250109725795}
+      addedObject: {fileID: -8431116153053634157}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7a32ab456468ff4aa6c942dd38ff9c6,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: -8431116153053634157}
+      addedObject: {fileID: 5000670288466657592}
   m_SourcePrefab: {fileID: 100100000, guid: b7a32ab456468ff4aa6c942dd38ff9c6, type: 3}
 --- !u!1 &6235612589999358372 stripped
 GameObject:
@@ -102,27 +102,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6505503868582935797}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &654724250109725795
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6235612589999358372}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.08026356, y: 0.46245748, z: 0.4624575}
-  m_Center: {x: -0.00000000372529, y: 0, z: 0}
 --- !u!95 &-8431116153053634157
 Animator:
   serializedVersion: 5
@@ -144,3 +123,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!135 &5000670288466657592
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235612589999358372}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.23122875
+  m_Center: {x: -0.00000000372529, y: 0, z: 0}

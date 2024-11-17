@@ -90,11 +90,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ab71c45a90be1fd4cb87c4b269266438,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6619186976318008696}
+      addedObject: {fileID: 8284801960160611910}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ab71c45a90be1fd4cb87c4b269266438,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8284801960160611910}
+      addedObject: {fileID: 114880722713790252}
   m_SourcePrefab: {fileID: 100100000, guid: ab71c45a90be1fd4cb87c4b269266438, type: 3}
 --- !u!1 &5722289169130810860 stripped
 GameObject:
@@ -102,27 +102,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4875373643767894205}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &6619186976318008696
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5722289169130810860}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.13094667, y: 0.7926054, z: 0.79260546}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &8284801960160611910
 Animator:
   serializedVersion: 5
@@ -144,3 +123,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!135 &114880722713790252
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5722289169130810860}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.39630273
+  m_Center: {x: 0, y: 0, z: 0}
