@@ -19,6 +19,7 @@ public class Lever3 : MonoBehaviour
     {
         if (player != null && Input.GetKeyDown(KeyCode.RightShift))
         {
+            AudioManager.Instance.PlaySound("lever");
             bridge.GetComponent<Animator>().enabled = true;
             lever1.SetActive(false);
             lever2.SetActive(true);

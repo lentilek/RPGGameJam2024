@@ -21,12 +21,14 @@ public class Lever2 : MonoBehaviour
     {
         if (player != null && Input.GetKeyDown(KeyCode.LeftShift) && leverNumber == 1)
         {
+            AudioManager.Instance.PlaySound("lever");
             column.GetComponent<Animator>().enabled = true;
             lever1.SetActive(false);
             lever2.SetActive(true);
         }
         else if (player != null && Input.GetKeyDown(KeyCode.LeftShift) && leverNumber == 2)
         {
+            AudioManager.Instance.PlaySound("lever");
             lightning.SetActive(false);
             lever1.SetActive(false);
             lever2.SetActive(true);

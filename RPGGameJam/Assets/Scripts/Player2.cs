@@ -52,6 +52,7 @@ public class Player2 : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.UpArrow) && isOnGround && !inPortal)
         {
+            AudioManager.Instance.PlaySound("jump");
             isOnGround = false;
             rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
         }

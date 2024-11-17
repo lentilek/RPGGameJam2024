@@ -15,6 +15,7 @@ public class Portal : MonoBehaviour
     {
         if (player != null && Input.GetKeyDown(KeyCode.LeftShift) && player.GetComponent<Player1>() != null && !player.GetComponent<Player1>().inPortal)
         {
+            AudioManager.Instance.PlaySound("portal");
             //Debug.Log("uwu");
             GameManager.Instance.inPortal++;
             //isInside = true;
@@ -22,6 +23,7 @@ public class Portal : MonoBehaviour
         }
         else if (player != null && Input.GetKeyDown(KeyCode.RightShift) && player.GetComponent<Player2>() != null && !player.GetComponent<Player2>().inPortal)
         {
+            AudioManager.Instance.PlaySound("portal");
             //Debug.Log("owo");
             GameManager.Instance.inPortal++;
             //isInside = true;
